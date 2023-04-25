@@ -17,6 +17,10 @@ def close_db(error):
     if db is not None:
         db.close()
 
+@app.route('/')
+def home():
+    return render_template('index.html')
+        
 @app.route('/datos_facturacion')
 def datos_facturacion():
     return render_template('datos_facturacion.html')
