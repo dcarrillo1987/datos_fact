@@ -19,7 +19,7 @@ def close_db(error):
 
 @app.route('/')
 def home():
-    return render_template('index.html')
+    return('index.html')
         
 @app.route('/datos_facturacion')
 def datos_facturacion():
